@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial+Rounded+MT+Bold&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background-color: #FAFAFA;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section {
+    flex: 1.2;
+    background-color: #FF3EA5;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+.right-section {
+    flex: 0.8;
+    background-color: #FAFAFA;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px; /* Jarak dari atas */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    height: 60px;
+    width: auto;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.text-container p {
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    font-weight: 700;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.circle-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.welcome-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 28px;
+    color: #FF3EA5;
+    font-weight: 700;
+    margin: 0;
+}
+
+.welcome-text p {
+    font-size: 16px;
+    color: #FF3EA5;
+    font-weight: 700;
+    margin: 8px 0 20px 0; /* Jarak di bawah teks */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* Lebar form diperkecil lagi */
+    max-width: 300px; /* Maksimal lebar lebih kecil */
+    gap: 30px; /* Jarak antar input */
+    margin-top: 20px; /* Jarak dari teks sebelumnya */
+}
+
+.form-input {
+    position: relative;
+    height: 60px; /* Tinggi input */
+    padding: 0 15px; /* Jarak dalam */
+    border: none; /* Hilangkan border default */
+    font-size: 16px; /* Ukuran teks */
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Font teks */
+    background: white; /* Latar belakang putih */
+    outline: none; /* Hilangkan outline default */
+    border-radius: 8px; /* Sedikit lengkungan pada sudut */
+    box-shadow: 
+        8px 8px 0px #FF0099, /* Warna pink cerah di kanan bawah */
+        -5px -5px 0px rgba(255, 62, 165, 0.6); /* Warna pink lebih gelap di kiri atas */
+    transition: box-shadow 0.3s ease; /* Animasi pada fokus */
+}
+
+.form-input:focus {
+    box-shadow: 
+        8px 8px 0px #FF0099, /* Warna pink cerah tetap tebal */
+        -5px -5px 0px rgba(255, 62, 165, 0.8), /* Warna pink lebih gelap tetap */
+        0 0 12px rgba(255, 62, 165, 0.7); /* Tambahan glow pink saat fokus */
+}
+
+.form-input::placeholder {
+    color: #000000; /* Warna placeholder hitam */
+    font-size: 16px; /* Ukuran font placeholder */
+    font-weight: 400; /* Placeholder tetap ringan */
+}
+
+.forgot-password {
+    font-size: 14px; /* Ukuran teks */
+    color: #0900FF; /* Warna biru */
+    text-decoration: none; /* Hilangkan garis bawah */
+    margin-top: -15px; /* Jarak dari form input */
+    cursor: pointer; /* Ganti kursor menjadi pointer */
+    margin-left: auto;
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+}
+
+.login-button {
+    width: 100%; /* Lebar tombol penuh */
+    max-width: 300px; /* Maksimal lebar tombol */
+    height: 50px; /* Tinggi tombol */
+    background-color: #FF0099; /* Warna pink tombol */
+    color: #FFFFFF; /* Warna teks putih */
+    border: none; /* Hilangkan border default */
+    font-size: 16px; /* Ukuran teks */
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Font teks */
+    font-weight: bold; /* Teks tebal */
+    text-align: center;
+    cursor: pointer; /* Ubah kursor menjadi pointer */
+    position: relative; /* Posisi relatif untuk shadow */
+    border-radius: 8px; /* Sudut sedikit melengkung */
+    box-shadow: 
+        6px 6px 0px #000000, /* Warna hitam di kanan bawah */
+        -3px -3px 0px #000000; /* Warna hitam di kiri atas */
+    text-transform: uppercase; /* Mengubah teks menjadi kapital */
+    transition: all 0.3s ease; /* Animasi hover */
+}
+
+.login-button:hover {
+    background-color: #FF0099; /* Warna lebih gelap saat hover */
+    box-shadow: 
+        6px 6px 0px #000000, /* Bayangan hitam tetap tebal */
+        -3px -3px 0px #000000; /* Bayangan hitam tetap */
+}
+
+.login-button:active {
+    transform: scale(0.98); /* Efek klik dengan sedikit mengecilkan tombol */
+    box-shadow: 
+        4px 4px 0px #000000, /* Bayangan hitam lebih kecil */
+        -2px -2px 0px #000000; /* Bayangan hitam lebih kecil di kiri atas */
+}
+
+.register-text {
+    font-size: 14px; /* Ukuran teks */
+    color: #000000; /* Warna teks */
+    margin-top: -15px; /* Jarak dari tombol login */
+    text-align: center; /* Pusatkan teks */
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Font teks */
+}
+
+.register-link {
+    color: #0900FF; /* Warna biru untuk link */
+    text-decoration: none; /* Hilangkan garis bawah */
+    cursor: pointer; /* Ubah kursor menjadi pointer */
+}
+
+.register-link:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.or-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px; /* Jarak dari elemen sebelumnya */
+    gap: 10px; /* Jarak antara garis dan teks */
+}
+
+.line {
+    flex: 1;
+    height: 2px; /* Tinggi garis */
+    background-color: #FF0099; /* Warna garis pink */
+}
+
+.or-text {
+    font-size: 16px; /* Ukuran teks "OR" */
+    font-weight: bold; /* Teks tebal */
+    color: #000000; /* Warna teks hitam */
+    padding: 0 10px; /* Ruang horizontal di sekitar teks */
+    text-align: center;
+}
+
+.google-button {
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Lebar tombol penuh */
+    max-width: 300px; /* Maksimal lebar tombol seperti sebelumnya */
+    height: 50px; /* Tinggi tombol */
+    border: 1px solid #FF0099; /* Border warna pink */
+    border-radius: 8px; /* Sudut melengkung */
+    background-color: #FFFFFF; /* Warna latar putih */
+    cursor: pointer; /* Ubah kursor menjadi pointer */
+    transition: all 0.3s ease; /* Animasi hover */
+    box-shadow: 
+        4px 4px 0px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.google-button:hover {
+    background-color: #FFFFFF; /* Warna latar saat hover */
+    box-shadow: 
+        6px 6px 0px rgba(0, 0, 0, 0.15); /* Bayangan lebih tegas */
+}
+
+.google-logo {
+    width: 24px; /* Ukuran logo Google */
+    height: 24px;
+    margin-right: 10px; /* Jarak antara logo dan teks */
+}
+
+.google-text {
+    font-size: 16px; /* Ukuran teks diperbesar */
+    color: #000000; /* Warna teks hitam */
+}
+
+@media (max-width: 480px) {
+    /* Tata Letak Utama */
+    .login-container {
+        flex-direction: column; /* Susunan vertikal */
+        height: auto; /* Tinggi fleksibel */
+        padding: 20px; /* Tambahkan padding */
+    }
+
+    .left-section {
+        display: none; /* Sembunyikan bagian kiri (logo dan Lorem Ipsum) */
+    }
+
+    .right-section {
+        width: 100%; /* Lebar penuh */
+        align-items: center; /* Semua elemen di tengah */
+        justify-content: flex-start; /* Susunan dari atas */
+    }
+
+    /* Form Input dan Tombol */
+    .login-form {
+        width: 100%; /* Lebar penuh */
+        max-width: 320px; /* Maksimal lebar */
+        gap: 20px; /* Jarak antar elemen */
+        margin: 0 auto; /* Pusatkan form */
+    }
+
+    .form-input {
+        height: 45px; /* Tinggi input lebih kecil */
+        font-size: 14px; /* Ukuran teks lebih kecil */
+    }
+
+    .login-button {
+        height: 45px; /* Tinggi tombol lebih kecil */
+        font-size: 14px; /* Ukuran teks lebih kecil */
+    }
+
+    /* Register Text */
+    .register-text {
+        font-size: 12px; /* Ukuran teks lebih kecil */
+        text-align: center; /* Teks di tengah */
+        margin-top: 15px; /* Jarak atas lebih besar */
+    }
+
+    /* OR Section */
+    .or-container {
+        margin: 20px 0; /* Jarak vertikal lebih besar */
+    }
+
+    .or-text {
+        font-size: 14px; /* Ukuran teks lebih kecil */
+    }
+
+    .line {
+        height: 1px; /* Garis lebih tipis */
+    }
+
+    /* Tombol Google */
+    .google-button {
+        height: 45px; /* Tinggi tombol lebih kecil */
+        font-size: 14px; /* Ukuran teks lebih kecil */
+        max-width: 320px; /* Lebar penuh */
+        margin: 0 auto; /* Pusatkan tombol */
+    }
+
+    .google-logo {
+        width: 20px; /* Ukuran logo Google lebih kecil */
+        height: 20px;
+        margin-right: 8px; /* Jarak lebih kecil antara logo dan teks */
+    }
+
+    /* Welcome Text */
+    .welcome-text {
+        margin-top: 20px;
+        text-align: center; /* Teks di tengah */
+    }
+
+    .welcome-text h1 {
+        font-size: 20px; /* Ukuran teks lebih kecil */
+    }
+
+    .welcome-text p {
+        font-size: 14px; /* Ukuran teks lebih kecil */
+    }
+}
+
