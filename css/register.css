@@ -31,6 +31,32 @@ body {
     padding-top: 40px; /* Jarak dari atas */
 }
 
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 16px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    color: #FF3EA5;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.back-button .arrow {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Hover effect */
+.back-button:hover {
+    text-decoration: none; /* Tetap tanpa garis bawah saat hover */
+    color: #FF0099; /* Warna lebih gelap saat hover */
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -268,6 +294,16 @@ body {
         width: 100%; /* Lebar penuh */
         align-items: center; /* Semua elemen di tengah */
         justify-content: flex-start; /* Susunan dari atas */
+    }
+
+    .back-button {
+        top: 10px; /* Jarak atas lebih kecil */
+        left: 10px; /* Jarak kiri lebih kecil */
+        font-size: 12px; /* Ukuran teks lebih kecil */
+    }
+
+    .back-button .arrow {
+        font-size: 16px; /* Ukuran panah lebih kecil */
     }
 
     /* Welcome Text */
