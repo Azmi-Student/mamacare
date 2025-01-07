@@ -99,19 +99,19 @@ body {
     object-fit: contain;
 }
 
-.welcome-text {
+.create-account {
     margin-top: 20px;
     text-align: center;
 }
 
-.welcome-text h1 {
+.create-account h1 {
     font-size: 28px;
     color: #FF3EA5;
     font-weight: 700;
     margin: 0;
 }
 
-.welcome-text p {
+.create-account p {
     font-size: 16px;
     color: #FF3EA5;
     font-weight: 700;
@@ -307,16 +307,16 @@ body {
     }
 
     /* Welcome Text */
-    .welcome-text {
+    .create-account {
         margin-top: 20px;
         text-align: center; /* Teks di tengah */
     }
 
-    .welcome-text h1 {
+    .create-account h1 {
         font-size: 20px; /* Ukuran teks lebih kecil */
     }
 
-    .welcome-text p {
+    .create-account p {
         font-size: 14px; /* Ukuran teks lebih kecil */
     }
 
