@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/Landing Page.svg'); /* Path ke gambar Anda */
+    background-size: 100% auto; /* Gambar menyesuaikan lebar halaman */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Gambar mengikuti scroll */
+    height: 1160vh; /* Buat halaman dua kali tinggi viewport */
+  }
+  

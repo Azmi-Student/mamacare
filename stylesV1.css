@@ -1,0 +1,88 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #FF3EA5, #FF5DB2); /* Background gradasi baru */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header container */
+header {
+    position: absolute;
+    top: 10px; /* Jarak dari atas */
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Padding untuk kesesuaian */
+}
+
+/* Logo */
+.logo {
+    width: 200px;
+    height: 50px;
+    background: url('img/Logo Mamacare (landing).png') no-repeat center;
+    background-size: contain;
+    margin-right: 20px; /* Jarak kecil antara logo dan navbar */
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Memisahkan main-menu dan auth-menu */
+    align-items: center;
+    width: 100%;
+}
+
+/* Menu utama (di tengah) */
+.navbar ul.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Jarak antar item menu */
+    justify-content: center; /* Memastikan posisi di tengah */
+    flex-grow: 1; /* Membuat menu utama mengambil ruang lebih banyak */
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu login/register (di kanan) */
+.navbar ul.auth-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Jarak antar item */
+    margin-left: auto; /* Tetap di sisi kanan */
+    padding: 0;
+}
+
+/* Gaya untuk item navbar */
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white; /* Warna putih untuk teks navbar */
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #FF5DB2; /* Efek hover */
+}
+
+/* Puzzle container */
+.puzzle-container {
+    width: 80%;
+    height: 80%;
+    background: url('img/hero_panel.png') repeat; /* Puzzle background */
+    background-size: contain;
+}
+
